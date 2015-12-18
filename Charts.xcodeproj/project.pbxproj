@@ -14,6 +14,9 @@
 		A6ADB1771C23EE4E001C061E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6ADB1761C23EE4E001C061E /* Images.xcassets */; };
 		A6ADB17A1C23EE4E001C061E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6ADB1781C23EE4E001C061E /* LaunchScreen.xib */; };
 		A6ADB1861C23EE4E001C061E /* ChartsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6ADB1851C23EE4E001C061E /* ChartsTests.m */; };
+		A6ADB1911C23F247001C061E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6ADB1901C23F247001C061E /* QuartzCore.framework */; };
+		A6ADB1931C23F252001C061E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6ADB1921C23F252001C061E /* CoreGraphics.framework */; };
+		EF2EBBFDF2E1ABE7F2F69D9B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 955D6F4A38FB0FFCEA36D2E9 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		808C16CFB3867091BAEC3147 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		955D6F4A38FB0FFCEA36D2E9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6ADB1661C23EE4E001C061E /* Charts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Charts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6ADB16A1C23EE4E001C061E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6ADB16B1C23EE4E001C061E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +45,10 @@
 		A6ADB17F1C23EE4E001C061E /* ChartsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChartsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6ADB1841C23EE4E001C061E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6ADB1851C23EE4E001C061E /* ChartsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChartsTests.m; sourceTree = "<group>"; };
+		A6ADB18F1C23EE63001C061E /* PodFile */ = {isa = PBXFileReference; lastKnownFileType = text; path = PodFile; sourceTree = "<group>"; };
+		A6ADB1901C23F247001C061E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A6ADB1921C23F252001C061E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E88419AFE00CBD1293689C8C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +56,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6ADB1931C23F252001C061E /* CoreGraphics.framework in Frameworks */,
+				A6ADB1911C23F247001C061E /* QuartzCore.framework in Frameworks */,
+				EF2EBBFDF2E1ABE7F2F69D9B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +72,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A010FDB4D30E6247CF5BE9A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6ADB1921C23F252001C061E /* CoreGraphics.framework */,
+				A6ADB1901C23F247001C061E /* QuartzCore.framework */,
+				955D6F4A38FB0FFCEA36D2E9 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A6ADB15D1C23EE4E001C061E = {
 			isa = PBXGroup;
 			children = (
+				A6ADB18F1C23EE63001C061E /* PodFile */,
 				A6ADB1681C23EE4E001C061E /* Charts */,
 				A6ADB1821C23EE4E001C061E /* ChartsTests */,
 				A6ADB1671C23EE4E001C061E /* Products */,
+				F33A5A2A7130827FA2617CD7 /* Pods */,
+				A010FDB4D30E6247CF5BE9A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +144,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F33A5A2A7130827FA2617CD7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E88419AFE00CBD1293689C8C /* Pods.debug.xcconfig */,
+				808C16CFB3867091BAEC3147 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +160,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6ADB1891C23EE4E001C061E /* Build configuration list for PBXNativeTarget "Charts" */;
 			buildPhases = (
+				71C38379028E640B28EB5189 /* Check Pods Manifest.lock */,
 				A6ADB1621C23EE4E001C061E /* Sources */,
 				A6ADB1631C23EE4E001C061E /* Frameworks */,
 				A6ADB1641C23EE4E001C061E /* Resources */,
+				AD4639A84549836926A42A41 /* Embed Pods Frameworks */,
+				A5A63F05895747343E99B64E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,6 +250,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		71C38379028E640B28EB5189 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A5A63F05895747343E99B64E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD4639A84549836926A42A41 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A6ADB1621C23EE4E001C061E /* Sources */ = {
@@ -345,6 +430,7 @@
 		};
 		A6ADB18A1C23EE4E001C061E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E88419AFE00CBD1293689C8C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Charts/Info.plist;
@@ -355,6 +441,7 @@
 		};
 		A6ADB18B1C23EE4E001C061E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 808C16CFB3867091BAEC3147 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Charts/Info.plist;
@@ -416,6 +503,7 @@
 				A6ADB18B1C23EE4E001C061E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A6ADB18C1C23EE4E001C061E /* Build configuration list for PBXNativeTarget "ChartsTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +512,7 @@
 				A6ADB18E1C23EE4E001C061E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

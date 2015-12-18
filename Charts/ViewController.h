@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <PNChart/PNChart.h>
+#import "PNCircleChart.h"
+#import "PNChartDelegate.h"
+@interface ViewController : UIViewController<PNChartDelegate>
 
-@interface ViewController : UIViewController
-
-
+@property (nonatomic) BOOL lineChartTrue;
+@property (nonatomic) BOOL barChartTrue;
+@property (nonatomic) BOOL circleChartTrue;
+@property (nonatomic) BOOL pieChartTrue;
 @end
 
